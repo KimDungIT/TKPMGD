@@ -1,0 +1,18 @@
+<tabs>
+    <tab
+        id="@+id/tab_grammar"
+        icon="@mipmap/ic_grammar"
+        title="Ngữ pháp" />
+    <tab
+        id="@+id/tab_vocabulary"
+        icon="@mipmap/ic_vocabulary"
+        title="Từ vựng" />
+    <tab
+        id="@+id/tab_search"
+        icon="@mipmap/ic_search"
+        title="Tra từ" />
+    <tab
+        id="@+id/tab_test"
+        icon="@mipmap/ic_test"
+        title="Kiểm tra" />
+</tabs>

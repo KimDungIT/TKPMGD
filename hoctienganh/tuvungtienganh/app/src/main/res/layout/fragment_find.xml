@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_bg_main"
+    tools:context=".fragment.FindFragment">
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_home_footer" />
+    <EditText
+        android:layout_below="@+id/adView"
+        android:id="@+id/edtKeyWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_searchproduct"
+        android:drawableLeft="@drawable/ic_search_24dp"
+        android:drawablePadding="10dp"
+        android:hint="Tra từ"
+        android:imeOptions="actionSearch"
+        android:maxWidth="330dp"
+        android:minWidth="290dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="10dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="10dp"
+        android:singleLine="true"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="17sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcvSearchProduct"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/edtKeyWord" />
+
+</RelativeLayout>
